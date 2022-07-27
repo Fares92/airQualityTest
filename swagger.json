@@ -1,0 +1,52 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "version": "1.0.0",
+        "title": "Air Quality Api"
+    },
+    "host": "localhost:5000",
+    "basePath": "/",
+    "schemes": [
+        "http"
+    ],
+    "consumes": [
+        "application/json"
+    ],
+    "produces": [
+        "application/json"
+    ],
+    "paths": {
+
+        "/airQuality/{lat}/{lon}": {
+            "parameters": [
+                {
+                    "name": "lat",
+                    "in": "path",
+                    "required": true,
+                    "description": "latitude of the location ",
+                    "type": "string"
+                },
+                {
+                    "name": "lon",
+                    "in": "path",
+                    "required": true,
+                    "description": "longitude of the location ",
+                    "type": "string"
+                }
+            ],
+            "get": {
+
+                "summary": "Get result by latitude and longitude ",
+                "responses": {
+                    "200": {
+                        "description": "result  returned successfully"
+                    }
+                }
+            }
+
+        }
+
+
+    }
+
+}
