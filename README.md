@@ -1,4 +1,4 @@
-our project in in node js adn express framework.
+our project in in node js and express framework.
  
 *before runnig:
 1-install dependecies using 'npm i'
